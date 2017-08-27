@@ -1,0 +1,55 @@
+body{
+    background-color: #333333;
+}
+.element {
+    border: 1px solid #999999;
+    border-radius:0;
+}
+.topElements{
+    position:absolute;
+    left: 0;
+    top: 0;
+    right:0;
+}
+.rezizeArea{
+    height:94.5vh;
+    position: relative;
+}
+.element1{
+    height:10px;
+    background-color:#1E1E1E;
+}
+.element2{
+    width: 20%;
+    height:10px;
+    float: right;
+    position: relative;
+    background-color:#333333;
+}
+.element3{
+    height:30%;
+    position:absolute; 
+    left: 0;
+    bottom: 0;
+    right:0; 
+    background-color:#252526;
+}
+#resizerX{
+    width: 2px;
+    height:100%;
+    background: #999999;
+    float: right;
+}
+#resizerX:hover{
+    width: 4px;
+}
+#resizerY{
+    height:4px;
+    position:absolute;
+    left: 0;
+    right:0;
+    background: #999999;
+}
+#resizerY:hover{
+    height:4px;
+}

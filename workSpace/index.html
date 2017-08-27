@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>resizer</title>
+    <meta name="author" content="Wasim Almadfaa almadfaawasem@outlook.de">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!--online Css file -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--online Css file -->
+
+    <!-- Css file -->
+    <link rel="stylesheet" href="css/menus.css">
+    <link rel="stylesheet" href="css/resizerScript.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- Css file -->
+
+    <!-- javascript file -->
+    <script type="text/javascript" src="javascript/resizer/resizer.js"></script>
+    <script type="text/javascript" src="javascript/resizer/resizerScript.js"></script>
+    <!-- javascript file -->
+</head>
+<body>
+
+    <!--topMenu bar ////////////////////////////////////////////////////////////////////-->
+    <div class="topnav">
+        <a href="#home">Home</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+      </div>
+       <!--topMenu bar ////////////////////////////////////////////////////////////////////-->
+      
+       <div id="rezizeArea" class="element rezizeArea">
+        <div id="topElements" class="element topElements">
+            <!--Element 2_____________________________________________________________________________-->
+            <div id="element2" class="element element2">
+
+            <!--menu ////////////////////////////////////////////////////////////////////-->
+                    <div class="icon-bar">
+                            <a href="#"><i class="fa fa-home"></i></a> 
+                            <a href="#"><i class="fa fa-search"></i></a> 
+                            <a href="#"><i class="fa fa-envelope"></i></a> 
+                            <a href="#"><i class="fa fa-globe"></i></a>
+                            <a href="#"><i class="fa fa-trash"></i></a> 
+                          </div>
+            <!--menu ////////////////////////////////////////////////////////////////////-->              
+                
+
+            </div>
+            <!--Element 2 _____________________________________________________________________________-->
+
+
+            <!--the resizerElement in the top #############################################################################-->
+            <div id="resizerX"></div>
+            <script type="text/javascript">
+                resizerX("resizerX", function (e) {
+                    resizeX(e.pageX + 10);
+                });
+            </script>
+            <!--the resizerElement in the top #############################################################################-->
+
+
+
+            <!--Element 1_____________________________________________________________________________-->
+            <div id="element1" class="element element1">
+    
+
+            </div>
+            <!--Element 1_____________________________________________________________________________-->
+        </div>
+
+
+
+        <!--the resizerElement in the buttom #############################################################################-->
+        <div id="resizerY"></div>
+        <script type="text/javascript">
+            resizerY("resizerY", function (e) {
+                resizeY(e.pageY + 10);
+            });
+        </script>
+        <!--the resizerElement in the buttom #############################################################################-->
+
+
+
+        <!--Element 3_____________________________________________________________________________-->
+        <div id="element3" class="element element3">
+            
+             <div class="bottomnav">
+                <a href="#home">Home</a>
+                <a href="#news">News</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+
+        </div>
+        <!--Element 3_____________________________________________________________________________-->
+    </div>
+    <script type="text/javascript">
+        onresize();
+    </script>
+</body>
+</html>
+

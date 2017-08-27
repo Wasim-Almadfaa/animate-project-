@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>resizer</title>
+    <meta name="author" content="Andrej Hristoliubov anhr@mail.ru">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script type="text/javascript" src="javascript/resizer/Common.js"></script>
+    <script type="text/javascript" src="javascript/resizer/resizer.js"></script>
+    <script type="text/javascript" src="javascript/resizer/resizerScript.js"></script>
+    <script type="text/javascript" src="javascript/menus/Elem2Menu.js"></script>
+    <link rel="stylesheet" href="css/resizerScript.css">
+    <link rel="stylesheet" href="css/Elem2Menu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div id='Message'></div>
+    <div id="rezizeArea" class="element rezizeArea">
+        <div id="topElements" class="element topElements">
+            <!--Element 2-->
+            <div id="element2" class="element element2">
+                
+            </div>
+            <div id="resizerX"></div>
+            <script type="text/javascript">
+                resizerX("resizerX", function (e) {
+                    resizeX(e.pageX + 5);
+                });
+            </script>
+            <div id="element1" class="element element1">Element 1</div>
+        </div>
+        <div id="resizerY"></div>
+        <script type="text/javascript">
+            resizerY("resizerY", function (e) {
+                resizeY(e.pageY + 5);
+            });
+        </script>
+        <div id="element3" class="element element3">Element 3</div>
+    </div>
+    <script type="text/javascript">
+        onresize();
+    </script>
+</body>
+</html>
